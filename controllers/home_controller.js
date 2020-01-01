@@ -1,6 +1,13 @@
 //defining the home action
+module.exports.default = (req, res)=>{
+    return res.render('home', {
+        title : 'defaultTitle'
+    });
+}
 module.exports.home = (req, res)=>{
-    return res.send('<h1>Figure out how to display an html page here.</h1>')
+return res.render('home', {
+        title : 'HomeTitle'
+    });
 }
 
 module.exports.secondAction = (req, res)=>{
