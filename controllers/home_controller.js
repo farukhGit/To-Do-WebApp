@@ -1,12 +1,12 @@
 //defining the home action
 module.exports.default = (req, res)=>{
     return res.render('home', {
-        title : 'defaultTitle'
+        title : 'App'
     });
 }
 module.exports.home = (req, res)=>{
 return res.render('home', {
-        title : 'HomeTitle'
+        title : 'App'
     });
 }
 

@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/home.css">
+    <script src="https://kit.fontawesome.com/3bb14eca3e.js" crossorigin="anonymous"></script>
     <title>
         <%= title %>
     </title>
 </head>
 <body>
-    <h1>To Do - <%= title %></h1>
+    <div id="wrapper">
+        <h1>To Do <%= title %></h1>
+        <form action="">
+            <div id="jobDescription">
+                <h2>Enter Description</h2>
+                <textarea name="description" id="jobDescriptionText" cols="80" rows="5" placeholder="Enter the description of what you want to do?"></textarea>
+            </div>
+            <div id="categories">
+                <input type="radio" name="toDoType" value="work" id="work"> <label for="work">Work</label>
+
+                <input type="radio" name="toDoType" value="personal" id="personal"><label for="personal">Personal</label>
+
+                <input type="radio" name="toDoType" value="chores" id="chores"><label for="chores">Chores</label>
+
+                <input type="radio" name="toDoType" value="other" id="other"><label for="other">Other</label>
+            </div>
+    
+            <div id="dueDateContainer">
+                Due Date
+                <input type="date" name="dueDate" id="dueDate">
+            </div>
+            <div id="controlBtns">
+                
+                <button type="submit"><i class="fas fa-plus"></i>Create Task</button>
+                
+                <button type="submit"><i class="fas fa-trash"></i> Deleted Task</button>
+            </div>
+        </form>
+
+        <div id="tasksContainer">
+
+        </div>
+    </div>
+    <script src="../assets/js/home.js"></script>
 </body>
 </html>
