@@ -15,7 +15,7 @@ h2{
     color: #1E3226;
 }
 
-button[type]{
+button{
     cursor: pointer;
 }
 
@@ -126,6 +126,33 @@ button[type]{
     border: none;
     font-size: 1.5em;
 }
+
+#tasksContainer{
+    width: 100%;
+}
+#tasksContainer h1{
+    margin-top: 25px;
+}
+
+#tasksContainer a{
+    font-size: 1.5em;
+    margin-left: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+.tasksDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#taskDone, .desc, .date, .type {
+    margin-left: 15px;
+}
+
 
 
 
